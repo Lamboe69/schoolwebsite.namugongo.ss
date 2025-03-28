@@ -1,0 +1,317 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #0f1b53;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.logo img {
+    max-width: 500px;
+}
+
+.logo h1 {
+    margin: 10px 0;
+    font-size: 24px;
+}
+
+.huh{
+    margin: 50px;
+}
+
+.huh2{
+    float: left;
+    width: 500px;
+    object-fit: cover;
+    border-radius: 300px;
+    margin-right: 10px;
+}
+
+.huh1{
+    text-align: center;
+    color: orangered;
+}
+
+.logo p {
+    font-style: italic;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ffca28;
+}
+
+main {
+    padding: 20px;
+    min-height: calc(100vh - 160px);
+}
+
+footer {
+    background-color: #0f1b53;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .logo img {
+        max-width: 80px;
+    }
+
+    .logo h1 {
+        font-size: 20px;
+    }
+}
+
+.welcome {
+    position:relative;
+    text-align: center;
+    margin-bottom: 20px;
+    background-color: #95adb3;
+    float: left;
+    background: transparent;
+    display: block;
+    color: rgb(9, 2, 27);
+    font-size: 2em;
+    background-image: url('/IMAGES/31.jpeg') ;
+    background-size: cover;
+}
+
+.carousel {
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+}
+
+.hey{
+    font-style: italic;
+    font-weight: bold;
+}
+
+.slides img {
+    width: 100%;
+    height: 100%;
+    display: none;
+    animation: fade 1s ease-in-out;
+    margin: 0px;
+    object-fit: cover;
+}
+
+@keyframes fade {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.tabs {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.tab-buttons button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #ddd;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.tab-buttons button.active, .tab-buttons button:hover {
+    background-color: #004d40;
+    color: white;
+}
+
+.tab-content {
+    padding: 20px;
+    border: 1px solid #ddd;
+}
+
+.accordion-btn {
+    width: 100%;
+    padding: 10px;
+    text-align: left;
+    background-color: #ddd;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.accordion-btn:hover {
+    background-color: #004d40;
+    color: white;
+}
+
+.accordion-content {
+    display: none;
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+.subject-table table {
+    width: 100%;
+    max-width: 600px;
+    margin: 20px auto;
+    border-collapse: collapse;
+}
+
+.subject-table th, .subject-table td {
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+.subject-table th {
+    background-color: #004d40;
+    color: white;
+}
+
+.submit-news form {
+    max-width: 500px;
+    margin: 20px auto;
+}
+
+.submit-news label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+.submit-news input, .submit-news textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+}
+
+.submit-news button {
+    background-color: #004d40;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.submit-news button:hover {
+    background-color: #ffca28;
+    color: black;
+}
+
+.calendar span {
+    color: #004d40;
+    cursor: pointer;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 10px;
+    max-width: 1000px;
+    margin: 20px auto;
+    object-fit: cover;
+    width: 100px;
+    height: 50px;
+}
+
+.gallery-grid img {
+    width: 100%;
+    height: auto;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.gallery-grid img:hover {
+    transform: scale(1.05);
+}
+
+.lightbox {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
+}
+
+.lightbox img {
+    max-width: 90%;
+    max-height: 90%;
+}
+
+.lightbox span {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.contact-form form {
+    max-width: 500px;
+    margin: 20px auto;
+}
+
+.contact-form label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+.contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+}
+
+.contact-form button {
+    background-color: #004d40;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.contact-form button:hover {
+    background-color: #ffca28;
+    color: black;
+}
+
+.map {
+    text-align: center;
+}
+
+.map iframe {
+    max-width: 100%;
+}
