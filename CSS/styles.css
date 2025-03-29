@@ -22,7 +22,9 @@ header {
 }
 
 h2{
-    font: italic;
+    font-family:'Times New Roman', Times, serif;
+    font-style: italic;
+    color: orangered;
 }
 
 h1{
@@ -89,7 +91,7 @@ footer {
     color: white;
     text-align: center;
     padding: 10px;
-    position: relative;
+    position: fixed;
     bottom: 0;
     width: 100%;
 }
