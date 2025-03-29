@@ -21,6 +21,10 @@ header {
     max-width: 500px;
 }
 
+h1{
+    font-size: 20em;
+}
+
 .logo h1 {
     margin: 10px 0;
     font-size: 24px;
@@ -31,7 +35,7 @@ header {
 }
 
 .huh{
-    margin: 50px;
+    margin: 20px;
 }
 
 .huh2{
@@ -81,7 +85,7 @@ footer {
     color: white;
     text-align: center;
     padding: 10px;
-    position: fixed;
+    position: relative;
     bottom: 0;
     width: 100%;
 }
@@ -103,16 +107,11 @@ footer {
 }
 
 .welcome {
-    position:relative;
     text-align: center;
-    margin-bottom: 20px;
-    float: left;
-    display: block;
+    margin: opx;
     color: rgb(9, 2, 27);
     font-size: 2em;
     background-image: url('IMAGES/7.jpeg');
-    background-size: cover;
-    background-position: center;
 }
 
 .carousel {
